@@ -24,7 +24,7 @@ Procedure:
 5. Patch the image using Dom's scripts here:
     - `wget https://github.com/shymega/magisk-boot-patch-ci-tool/archive/refs/tags/v1.2.0.zip`
     - `unzip v1.2.0.zip`
-    - `magisk-boot-patch-ci-tool-main/patch.sh boot.img`
+    - `magisk-boot-patch-ci-tool-1.2.0/patch.sh boot.img`
     - That'll download and use Magisk to patch it, writing the result as root-boot.img.
 6. Write the patched image back to the Astro:
     - Make sure the Astro is still powered off.
