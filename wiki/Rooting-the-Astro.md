@@ -21,7 +21,7 @@ Procedure:
     - Wait for that to finish, then disconnect.
     - That'll save the image to the file boot.img.
 5. **Patch the image** using [@shymega](https://github.com/shymega)'s scripts here:
-    - `wget [https://github.com/shymega/magisk-boot-patch-ci-tool/archive/refs/tags/v1.2.0.zip](https://github.com/shymega/magisk-boot-patch-ci-tool/archive/refs/tags/v1.2.0.zip)`
+    - `wget https://github.com/shymega/magisk-boot-patch-ci-tool/archive/refs/tags/v1.2.0.zip`
     - `unzip v1.2.0.zip`
     - `magisk-boot-patch-ci-tool-1.2.0/patch.sh boot.img`
     - That'll download and use Magisk to patch it, writing the result as root-boot.img.
