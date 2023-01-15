@@ -8,4 +8,7 @@ It is hoped that in the future, we'll be able to merge the Planet Computers' sup
 
 However, for now [planet-devices][] will remain a community-maintained initiative.
 
+To contribute, submit a PR to the [planet-devices-wiki.prs][] repo.
+
 [planet-devices]: https://github.com/shymega/planet-devices
+[planet-devices-wiki.prs]: https://github.com/shymega/planet-devices-wiki.prs
