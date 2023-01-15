@@ -13,7 +13,7 @@ Procedure:
 1. If you've used the Astro already, **take a backup** of anything you want to keep (apps, data, settings, etc.) as this will wipe it to factory settings.
 2. **Unlock** the bootloader, so that the root image can boot. The Astro will
    soft-brick if you use unsigned boot images. You can do this by following [this](https://www.ifixit.com/Guide/How+to+unlock+the+bootloader+of+an+Android+Phone/152629) guide here.
-3. **Install [mtkclient v1.52](https://github.com/bkerler/mtkclient)** on the Linux box, following all the Linux instructions [here](https://github.com/bkerler/mtkclient).
+3. **Install [mtkclient v1.52](https://github.com/bkerler/mtkclient/archive/refs/tags/1.52.zip)** on the Linux box, following all the Linux instructions [here](https://github.com/bkerler/mtkclient).
 4. **Extract the boot image** from the Astro:
     - **Shut down** the Astro.
     - Connect the Linux box to the Astro's bottom/right USB port.
