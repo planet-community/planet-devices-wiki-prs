@@ -2,13 +2,14 @@
 
 To (manually) root the Astro Slide, you can use this guide:
 
-You will need:
+## Requirements
 
 - An **Astro Slide 5G** (obviously).
 - **A machine running Linux**. (I did this with Linux Mint, but I expect this'll work on most flavours.) It'll need to be a fairly recent version, to satisfy the `mtkclient` [requirements](https://github.com/bkerler/mtkclient/blob/main/requirements.txt).
 - **USB cable** to connect the Astro (USB-C) to the Linux machine.
 
-Procedure:
+## Procedure
+
 1. If you've used the Astro already, **take a backup** of anything you want to keep (apps, data, settings, etc.) as this will wipe it to factory settings.
 2. **Unlock** the bootloader, so that the root image can boot. The Astro will
    soft-brick if you use unsigned boot images. You can do this by following [this](https://www.ifixit.com/Guide/How+to+unlock+the+bootloader+of+an+Android+Phone/152629) guide here.
@@ -31,3 +32,25 @@ Procedure:
     - Wait for that to finish, then disconnect.
 7. **Boot the Astro** back up.
 8. **Install the full Magisk app** from the stub present in the app drawer, and hide root if necessary.
+
+## Unlocked bootloader warning/prompt
+
+After rooting, a warning/prompt is added to the boot screen in tiny writing. You'll always have to press the power button within 5 seconds of the prompt to continue booting.
+
+The prompt reads:
+
+> dm-verity corruption
+>
+> Your device is corrupt.
+> It can't be trusted and may not work properly.
+> Press power button to continue.
+> Or, device will power off in 5s.
+
+The device will continuously boot loop this screen until you react.
+
+Once you press the power button, the text changes to:
+
+> Orange State
+>
+> Your device has been unlocked and cannot be trusted
+> Your device will boot in 5 seconds
