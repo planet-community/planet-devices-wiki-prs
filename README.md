@@ -1,5 +1,4 @@
-README
-======
+# README
 
 This repository acts as an intermediary staging area for new content, modifications, and updates to the [planet-devices][] repository's wiki.
 

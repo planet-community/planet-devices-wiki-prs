@@ -1,5 +1,4 @@
-Rooting: the Astro Slide (manual)
-=================================
+# Rooting: the Astro Slide (manual)
 
 To (manually) root the Astro Slide, you can use this guide:
 
