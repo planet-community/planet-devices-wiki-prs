@@ -2,10 +2,10 @@ name: Publish docs to Wiki
 
 on:
   push:
-    paths:
-      - wiki/**
-    branches:
-      - main
+#    paths:
+#      - wiki/**
+#    branches:
+#      - main
 
 env:
   USER_TOKEN: ${{ secrets.GH_PAT }}
@@ -22,19 +22,9 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v3
 
-      - name: Pull content from wiki
-        run: |
-          mkdir tmp_wiki
-          cd tmp_wiki
-          git init
-          git config user.name $USER_NAME
-          git config user.email $USER_EMAIL
-          git pull https://x:$USER_TOKEN@github.com/$OWNER/$REPOSITORY_NAME.wiki.git
+      - name: Add Wiki as a remote
+        run: git remote add wiki https://x:$USER_TOKEN@github.com/$OWNER/$REPOSITORY_NAME.wiki.git
 
-      - name: Push content to wiki
-        run: |
-          rsync -av --delete wiki/ tmp_wiki/ --exclude .git
-          cd tmp_wiki
-          git add .
-          git commit -m "Update Wiki content"
-          git push -f --set-upstream https://x:$USER_TOKEN@github.com/$OWNER/$REPOSITORY_NAME.wiki.git master
+      - name: Mirror all commits to production Wiki remote.
+        run: git push --force wiki main:master
+
