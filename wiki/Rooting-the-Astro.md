@@ -33,3 +33,25 @@ To (manually) root the Astro Slide, you can use this guide:
     - Wait for that to finish, then disconnect.
 7. **Boot the Astro** back up.
 8. **Install the full Magisk app** from the stub present in the app drawer, and hide root if necessary.
+
+## Unlocked bootloader warning/prompt
+
+After rooting, a warning/prompt is added to the boot screen in tiny writing. You'll always have to press the power button within 5 seconds of the prompt to continue booting.
+
+The prompt reads:
+
+> dm-verity corruption
+>
+> Your device is corrupt.
+> It can't be trusted and may not work properly.
+> Press power button to continue.
+> Or, device will power off in 5s.
+
+The device will continuously boot loop this screen until you react.
+
+Once you press the power button, the text changes to:
+
+> Orange State
+>
+> Your device has been unlocked and cannot be trusted
+> Your device will boot in 5 seconds
