@@ -31,5 +31,5 @@ jobs:
         run: git fetch --unshallow origin
 
       - name: Mirror all commits to production Wiki remote.
-        run: git push --force wiki master
+        run: git push --force wiki main:master
 
