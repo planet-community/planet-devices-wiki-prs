@@ -28,8 +28,8 @@ jobs:
         run: git remote add wiki https://$OWNER:$USER_TOKEN@github.com/$OWNER/$REPOSITORY_NAME.wiki
 
       - name: Make sure to fetch remotes, unshallowed
-        run: git fetch --unshallow origin && git fetch --unshallow wiki
+        run: git fetch --unshallow origin
 
       - name: Mirror all commits to production Wiki remote.
-        run: git push --force wiki main:master
+        run: git push --force wiki master
 
