@@ -36,4 +36,6 @@ Note that fastboot can also be accessed from recovery, but looks different.
 
 ## Safe mode
 
-We do not yet know of a way to boot Android in safe mode.
+Boot normally, but when the Astro Slide logo appears, start holding Volume Down. Once the lockscreen is displayed, release Volume Down.
+
+'Safe mode' is displayed at the bottom of the (portrait) lockscreen.
