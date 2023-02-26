@@ -1,11 +1,12 @@
 name: Publish docs to Wiki
 
 on:
+  workflow_dispatch:
   push:
-#    paths:
-#      - wiki/**
-#    branches:
-#      - main
+    paths:
+      - wiki/**
+    branches:
+      - main
 
 env:
   USER_TOKEN: ${{ secrets.GH_PAT }}
