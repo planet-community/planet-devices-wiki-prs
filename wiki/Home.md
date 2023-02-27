@@ -9,5 +9,8 @@ However, for now [planet-devices][] will remain a community-maintained initiativ
 
 To contribute, submit a PR to the [planet-devices-wiki.prs][] repo.
 
+In lieu of Planet Computers providing delivery stats, please respond to this poll: [Have you received your Astro Slide yet?][delivery-poll]
+
 [planet-devices]: https://github.com/shymega/planet-devices
 [planet-devices-wiki.prs]: https://github.com/shymega/planet-devices-wiki.prs
+[delivery-poll]: https://strawpoll.com/polls/mpnbo1R5wg5
