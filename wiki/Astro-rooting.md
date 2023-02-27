@@ -1,37 +1,78 @@
-# Rooting: the Astro Slide (manual)
+# Astro rooting
 
-To (manually) root the Astro Slide, you can use this guide:
+To root the Astro Slide, you can use this guide. Overview of the process:
 
-## Requirements
+- Back up content from the Astro
+- Unlock the Astro's bootloader
+- Extract (back up) the stock boot image from the Astro
+- Flash a patched boot image to the Astro
 
-- An **Astro Slide 5G** (obviously).
-- **A machine running Linux**. (I did this with Linux Mint, but I expect this'll work on most flavours.) It'll need to be a fairly recent version, to satisfy the `mtkclient` [requirements](https://github.com/bkerler/mtkclient/blob/main/requirements.txt).
-- **USB cable** to connect the Astro (USB-C) to the Linux machine.
+## Back up content from the Astro
 
-## Procedure
+If you've used the Astro already, **take a backup** of anything you want to keep (photos, apps, data, settings, etc.) as the process described below will wipe it to factory settings (specifically, unlocking the bootloader is what does this).
 
-1. If you've used the Astro already, **take a backup** of anything you want to keep (apps, data, settings, etc.) as this will wipe it to factory settings.
-2. **Unlock** the bootloader, so that the root image can boot. The Astro will
-   soft-brick if you use unsigned boot images. You can do this by following [this](https://www.ifixit.com/Guide/How+to+unlock+the+bootloader+of+an+Android+Phone/152629) guide here.
-3. **Install [mtkclient v1.52](https://github.com/bkerler/mtkclient/archive/refs/tags/1.52.zip)** on the Linux box, following all the Linux instructions [here](https://github.com/bkerler/mtkclient).
-4. **Extract the boot image** from the Astro:
-    - **Shut down** the Astro.
-    - Connect the Linux box to the Astro's bottom/right USB port.
-    - `mtk r boot_a boot.img`
-    - Wait for that to finish, then disconnect.
-    - That'll save the image to the file boot.img.
-5. **Patch the image** using [@shymega](https://github.com/shymega)'s scripts here:
-    - `wget https://github.com/shymega/magisk-boot-patch-ci-tool/archive/refs/tags/v1.3.0.zip`
-    - `unzip v1.3.0.zip`
-    - `magisk-boot-patch-ci-tool-1.3.0/patch.sh boot.img`
-    - That'll download and use Magisk to patch it, writing the result as root-boot.img.
-6. **Write the patched image** back to the Astro:
-    - Make sure the Astro is **still powered off**.
-    - Connect the Linux box to the Astro's bottom/right USB port.
-    - `mtk w boot_a root-boot.img`
-    - Wait for that to finish, then disconnect.
-7. **Boot the Astro** back up.
-8. **Install the full Magisk app** from the stub present in the app drawer, and hide root if necessary.
+## Unlock the bootloader
+
+Before following any of the rooting methods below, you need to unlock the bootloader, so the kernel (AKA boot image) that's rooted will be able to boot. The Astro will be soft-bricked if you use an unsigned boot image such as those mentioned below (i.e. anything other than a stock (unmodified) one from Planet Computers).
+
+Use the Astro's bottom/right USB port to connect to your computer.
+
+You can perform the bootloader unlock by following [this iFixit guide](https://www.ifixit.com/Guide/How+to+unlock+the+bootloader+of+an+Android+Phone/152629).
+
+## Extract (back up) the stock boot image from the Astro
+
+It is strongly recommended to make a backup of your stock boot image, as you'll need to restore it before performing an OTA OS update.
+
+Note that there have been reports of Linux being easiest OS to get MTKClient working on.
+
+- Install [MTKClient](https://github.com/bkerler/mtkclient), following all the [Linux instructions](https://github.com/bkerler/mtkclient#install)
+- Shut down the Astro
+- Extract the boot image: `mtk r boot_a boot.img`
+- Wait for that to finish, then disconnect
+- The image file will have been saved as `boot.img`. Keep a copy of this somewhere safe
+
+### Rooting methods
+
+#### Rooting method 1: Use a pre-patched boot image
+
+This method is the easiest, but relies on someone having already published the applicable rooted boot image here, and having to trust that it is not malicious.
+
+- Download the rooted boot image matching your OS version (see Settings -> About phone -> Build number). These rooted boot images were generated using the method: 'Patch the boot image yourself using the Magisk app on Android'
+    + V01 (`Astro-11.0-Planet-05182022-V01`) - [stock](https://mega.nz/file/QgNEAKDC#obAvEFHSEloNim_xuLPFRgFxFTaYLYYR7HVXjKC9WVw), [rooted](https://mega.nz/file/A1kmzAIS#vf1k1CE15O6IVxcreNapqcSWpO-sgNhoIaPVPlhNM9A)
+- Reboot to fastboot - run: `adb reboot fastboot`
+- Flash the image to the Astro - run e.g.: `fastboot flash boot boot-v01-magisk-from-app.img`
+- Reboot: `fastboot reboot`
+
+#### Rooting method 2: Patch the boot image yourself using the Magisk app on Android
+
+- Copy the stock boot image file onto the Astro's storage
+- Download and install the Magisk app on the Astro (be sure to only ever download it from the [official Magisk GitHub](https://github.com/topjohnwu/Magisk)). Get the full APK of the latest version from the [Releases page](https://github.com/topjohnwu/Magisk/releases), e.g. `Magisk-v25.2.apk`
+- Open the Magisk app
+- Tap 'Install' in the 'Magisk' card
+- Tap 'Select and Patch a File'
+- Browse to, and select, the stock boot image file
+- Tap 'Let's Go', and wait ~15 seconds for the patching to complete
+- Copy the file mentioned in the output onto your computer and rename it as `boot-magisk.img`
+- Reboot to fastboot - run: `adb reboot fastboot`
+- Flash the rooted boot image to the Astro - run: `fastboot flash boot boot-magisk.img`
+- Reboot: `fastboot reboot`
+
+#### Rooting method 3: Patch the boot image yourself using a script
+
+Note that the image file produced in this method has a different hash to the method above. With this method, you may encounter a stuck boot screen upon enabling Zygisk if you've accepted the prompt to let Magisk perform additional setup ([manually disable Zygisk to fix booting](https://github.com/shymega/planet-devices/wiki/Astro-troubleshooting#booting-stuck-after-enabling-zygisk-in-magisk)).
+
+- Patch the image using [@shymega](https://github.com/shymega)'s scripts:
+    + `wget https://github.com/shymega/magisk-boot-patch-ci-tool/archive/refs/tags/v1.3.0.zip`
+    + `unzip v1.3.0.zip`
+    + `magisk-boot-patch-ci-tool-1.3.0/patch.sh boot.img`
+    + That'll download and use Magisk to patch it, writing the result as `root-boot.img`
+- Flash the rooted boot image to the Astro:
+    + Make sure the Astro is still powered off
+    + Plug the Astro into your computer
+    + `mtk w boot_a root-boot.img`
+    + Wait for that to finish, then disconnect
+- Boot the Astro back up
+- Install the full Magisk app from the stub present in the app drawer, and hide root if necessary
 
 ## Unlocked bootloader warning/prompt
 
