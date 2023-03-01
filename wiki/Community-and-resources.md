@@ -31,7 +31,9 @@ Aside from Indiegogo and the official wiki, none of these are managed or endorse
 [Web interface](https://web.telegram.org)
 
 - [Astro & Cosmo & Gemini PDA](https://t.me/+Uarhx92xsF-E5VoJ)
-- [LineageOS for the Planet Computers devices range](https://t.me/+iVT6lHeemR1hNzVk)
+- [LineageOS for the Planet Computers mobile devices range](https://t.me/+iVT6lHeemR1hNzVk)
+- [postmarketOS for the Planet Computers mobile devices range](https://t.me/+UBbp0KcUVCA2OTk0)
+- [Cosmo-CoDiOS for the Cosmo Communicator from Planet Computers](https://t.me/+Ylyv1ufCv8o3OWE0)
 
 ## Discord
 
