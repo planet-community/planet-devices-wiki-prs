@@ -37,7 +37,7 @@ Aside from Indiegogo and the official wiki, none of these are managed or endorse
 
 ## Discord
 
-- [Planet Computers](https://discord.gg/wr8RAwUKxX) (includes channels for ROM developers)
+- [Planet Computers](https://discord.gg/nPRXPk5thX) (includes channels for ROM developers, bridged to Telegram)
 - [Cosmo Communicator](https://discord.gg/XAKh4U2) (includes an #astro-slide channel)
 - [Astro Slide](https://discord.gg/fwp9Cn2KMZ)
 - [GPD Devices](https://discord.gg/4VneYPr) (includes a #planet_computers_devices channel)
