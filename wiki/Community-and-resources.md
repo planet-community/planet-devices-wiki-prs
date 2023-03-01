@@ -40,11 +40,11 @@ Aside from Indiegogo and the official wiki, none of these are managed or endorse
 - [Planet Computers](https://discord.gg/nPRXPk5thX) (includes channels for ROM developers, bridged to Telegram)
 - [Cosmo Communicator](https://discord.gg/XAKh4U2) (includes an #astro-slide channel)
 - [Astro Slide](https://discord.gg/fwp9Cn2KMZ)
-- [GPD Devices](https://discord.gg/4VneYPr) (includes a #planet_computers_devices channel)
 
 ## IRC
 
 - [#planet-devices on IRCNet](irc://ircnet.net/#planet-devices) - web interfaces: [IRCNet's The Lounge](https://ircnet.chat), [IRCCloud](https://www.irccloud.com/irc/ircnet/channel/planet-devices)
+
 
 ## Matrix
 
