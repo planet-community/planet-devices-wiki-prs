@@ -1,4 +1,4 @@
-# Community and resources
+# Community and Resources
 
 The Planet Computers community can be found in many places!
 
