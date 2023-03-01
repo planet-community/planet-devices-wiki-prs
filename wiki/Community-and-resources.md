@@ -54,6 +54,7 @@ Aside from Indiegogo and the official wiki, none of these are managed or endorse
 
 - [r/AstroSlide](https://www.reddit.com/r/AstroSlide/)
 - [r/CosmoCommunicator](https://www.reddit.com/r/CosmoCommunicator/)
+- [r/GeminiPDA](https://www.reddit.com/r/geminipda/)
 
 ---
 
