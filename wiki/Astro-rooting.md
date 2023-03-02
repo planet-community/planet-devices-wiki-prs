@@ -13,7 +13,7 @@ If you've used the Astro already, **take a backup** of anything you want to keep
 
 ## Unlock the bootloader
 
-Before following any of the rooting methods below, you need to unlock the bootloader, so the kernel (AKA boot image) that's rooted will be able to boot. The Astro will be soft-bricked if you use an unsigned boot image such as those mentioned below (i.e. anything other than a stock (unmodified) one from Planet Computers).
+Before following any of the rooting methods below, you need to unlock the bootloader, so the kernel (AKA boot image) that's rooted will be able to boot. Otherwise, the Astro will be soft-bricked if you use an unsigned boot image such as those mentioned below (i.e. anything other than a stock (unmodified) one from Planet Computers).
 
 Use the Astro's bottom/right USB port to connect to your computer.
 
@@ -23,7 +23,7 @@ You can perform the bootloader unlock by following [this iFixit guide](https://w
 
 It is strongly recommended to make a backup of your stock boot image, as you'll need to restore it before performing an OTA OS update.
 
-Note that there have been reports of Linux being easiest OS to get MTKClient working on.
+Note that there have been reports of Linux being the easiest OS to get MTKClient working on.
 
 - Install [MTKClient](https://github.com/bkerler/mtkclient), following all the [Linux instructions](https://github.com/bkerler/mtkclient#install)
 - Shut down the Astro
