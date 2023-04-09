@@ -82,9 +82,9 @@ The prompt reads:
 
 > dm-verity corruption
 >
-> Your device is corrupt.
-> It can't be trusted and may not work properly.
-> Press power button to continue.
+> Your device is corrupt.  
+> It can't be trusted and may not work properly.  
+> Press power button to continue.  
 > Or, device will power off in 5s.
 
 The device will continuously boot loop this screen until you react.
@@ -93,5 +93,5 @@ Once you press the power button, the text changes to:
 
 > Orange State
 >
-> Your device has been unlocked and cannot be trusted
+> Your device has been unlocked and cannot be trusted  
 > Your device will boot in 5 seconds
