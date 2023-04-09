@@ -76,7 +76,7 @@ Note that the image file produced in this method has a different hash to the met
 
 ## Unlocked bootloader warning/prompt
 
-After rooting, a warning/prompt is added to the boot screen in tiny writing. You'll always have to press the power button within 5 seconds of the prompt to continue booting.
+After rooting, a warning/prompt is added to the boot screen in tiny writing. You'll always have to press the power button within 5 seconds of the prompt to continue booting - unless you follow the instructions below to at least disable dm-verity.
 
 The prompt reads:
 
@@ -95,3 +95,29 @@ Once you press the power button, the text changes to:
 >
 > Your device has been unlocked and cannot be trusted  
 > Your device will boot in 5 seconds
+
+### Remove dm-verity corruption prompt/warning (optional)
+
+To remove this, disable dm-verity by flashing an empty vbmeta image:
+
+- Back up vbmeta: `mtk r vbmeta_a vbmeta_a.img`
+- Flash mtkclient's included empty vbmeta image: `mtk w vbmeta_a vbmeta.img.empty`
+
+### Remove Orange State delay/warning (optional)
+
+To remove this, you'll need to follow some instructions from Hovatek to manually apply a hex patch to the LK image:
+
+- Back up lk: `mtk r lk_a lk_a.img`
+- Perform the patch to the image file - follow just the *How to remove 5 seconds boot delay time in Orange State warning on Mediatek devices* section from [this page](https://www.hovatek.com/forum/thread-31664.html)
+- Flash your patched lk: `mtk w lk_a lk_a-manually-hex-patched-to-remove-orange-state-delay.img`
+
+## Before applying an OTA update
+
+An OTA update will expect the device to be in its stock state. You can remain unlocked and rooted, but partitions will likely need to be restored.
+
+- Undo any changes you've made to the `system` partition (or avoid making them in the first place by instead making systemless changes using Magisk packages)
+- Restore the boot image
+- Restore the vbmeta image
+- Restore the lk image
+- Apply the OTA update
+- Again make your customisations to system/boot/lk/vbmeta
