@@ -76,7 +76,7 @@ Note that the image file produced in this method has a different hash to the met
 
 ## Unlocked bootloader warning/prompt
 
-After rooting, a warning/prompt is added to the boot screen in tiny writing. You'll always have to press the power button within 5 seconds of the prompt to continue booting.
+After rooting, a warning/prompt is added to the boot screen in tiny writing. You'll always have to press the power button within 5 seconds of the prompt to continue booting - unless you follow the instructions below to disable dm-verity.
 
 The prompt reads:
 
@@ -95,3 +95,20 @@ Once you press the power button, the text changes to:
 >
 > Your device has been unlocked and cannot be trusted  
 > Your device will boot in 5 seconds
+
+### Remove dm-verity corruption prompt/warning
+
+To remove this, disable dm-verity by flashing an empty vbmeta image:
+
+- Back up vbmeta: `mtk r vbmeta_a vbmeta_a.img`
+- Flash mtkclient's included empty vbmeta image: `mtk w vbmeta_a vbmeta.img.empty`
+
+## Before applying an OTA update
+
+An OTA update will expect the device to be in its stock state. You can remain unlocked and rooted, but partitions will likely need to be restored.
+
+- Undo any changes you've made to the `system` partition (or avoid making them in the first place by instead making systemless changes using Magisk packages)
+- Restore the boot image
+- Restore the vbmeta image
+- Apply the OTA update
+- Again make your customisations to system/boot/vbmeta
