@@ -66,12 +66,9 @@ Note that the image file produced in this method has a different hash to the met
     + `unzip v1.3.0.zip`
     + `magisk-boot-patch-ci-tool-1.3.0/patch.sh boot.img`
     + That'll download and use Magisk to patch it, writing the result as `root-boot.img`
-- Flash the rooted boot image to the Astro:
-    + Make sure the Astro is still powered off
-    + Plug the Astro into your computer
-    + `mtk w boot_a root-boot.img`
-    + Wait for that to finish, then disconnect
-- Boot the Astro back up
+- Reboot to fastboot - run: `adb reboot fastboot`
+- Flash the rooted boot image to the Astro - run: `fastboot flash boot root-boot.img`
+- Reboot: `fastboot reboot`
 - Install the full Magisk app from the stub present in the app drawer, and hide root if necessary
 
 ## Unlocked bootloader warning/prompt
