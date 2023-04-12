@@ -31,9 +31,9 @@ Note that there have been reports of Linux being the easiest OS to get MTKClient
 - Wait for that to finish, then disconnect
 - The image file will have been saved as `boot.img`. Keep a copy of this somewhere safe
 
-### Rooting methods
+## Rooting methods
 
-#### Rooting method 1: Use a pre-patched boot image
+### Rooting method 1: Use a pre-patched boot image
 
 This method is the easiest, but relies on someone having already published the applicable rooted boot image here, and having to trust that it is not malicious.
 
@@ -43,7 +43,7 @@ This method is the easiest, but relies on someone having already published the a
 - Flash the image to the Astro - run e.g.: `fastboot flash boot boot-v01-magisk-from-app.img`
 - Reboot: `fastboot reboot`
 
-#### Rooting method 2: Patch the boot image yourself using the Magisk app on Android
+### Rooting method 2: Patch the boot image yourself using the Magisk app on Android
 
 - Copy the stock boot image file onto the Astro's storage
 - Download and install the Magisk app on the Astro (be sure to only ever download it from the [official Magisk GitHub](https://github.com/topjohnwu/Magisk)). Get the full APK of the latest version from the [Releases page](https://github.com/topjohnwu/Magisk/releases), e.g. `Magisk-v25.2.apk`
@@ -57,7 +57,7 @@ This method is the easiest, but relies on someone having already published the a
 - Flash the rooted boot image to the Astro - run: `fastboot flash boot boot-magisk.img`
 - Reboot: `fastboot reboot`
 
-#### Rooting method 3: Patch the boot image yourself using a script
+### Rooting method 3: Patch the boot image yourself using a script
 
 Note that the image file produced in this method has a different hash to the method above. With this method, you may encounter a stuck boot screen upon enabling Zygisk if you've accepted the prompt to let Magisk perform additional setup ([manually disable Zygisk to fix booting](https://github.com/shymega/planet-devices/wiki/Astro-troubleshooting#booting-stuck-after-enabling-zygisk-in-magisk)).
 
