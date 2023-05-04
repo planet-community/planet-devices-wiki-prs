@@ -50,7 +50,7 @@ This has reduced quality, but at least works.
 
 ## Wrapper script
 
-Here is a [wrapper script](https://github.com/ksandom/astroTipsAndTricks/blob/main/documentation/scripts/scrcpyWrapper) to help you:
+Here is a [wrapper script][scrcpy] to help you:
 
 ```
 $ ./scripts/scrcpyWrapper --help
@@ -62,8 +62,16 @@ gemini-fh         Gemini, fix horizontal when an app is doing something stupid.
 gemini-fv         Gemini, fix vertical when an app is doing something stupid.
 ```
 
-So to get the normal gemini output, you can do:
+So to get the normal Gemini output, you can do:
 
 ```
 ./scripts/scrcpyWrapper gemini
 ```
+
+## Notes
+
+Note: on Android 13+, `scrcpy`  is unable to display certain screens, due to
+enhanced privacy settings at the OS-level. This is something that cannot be
+fixed.
+
+[scrcpy]: https://raw.githubusercontent.com/shymega/planet-devices/main/scripts/scrcpyWrapper

@@ -2,7 +2,7 @@
 
 Methods for doing virtualisation and containerisation on your device.
 
-### Linux containerisation
+## Linux containerisation
 
 ### UserLAnd
 
@@ -25,22 +25,16 @@ Methods for doing virtualisation and containerisation on your device.
 * [Termux on Google play](https://play.google.com/store/apps/details?id=com.termux&hl=en&gl=US).
 * Needs root: No?
 
-TODO Write about better ways to install it.
-
 ### PRoot
 
 There are various apps that do this for you. The advantage of PRoot, compared to chroot, is that it doesn't require root. The disadvantage is performance. Last time I checked, this has improved significantly since I last tried it seriously.
 
 * Needs root: No.
 
-TODO Write this.
-
 ### Chroot
 
 * Needs root: Yes.
 * Command line: Yes.
-* Instructions for doing it.
-    * TODO Link to various instructions for doing it.
 * Blog posts that may be helpful
     * [Making a chroot practical](http://www.funnyhacks.com/chroot/).
 
