@@ -56,6 +56,10 @@ Aside from Indiegogo and the official wiki, none of these are managed or endorse
 - [r/CosmoCommunicator](https://www.reddit.com/r/CosmoCommunicator/)
 - [r/GeminiPDA](https://www.reddit.com/r/geminipda/)
 
+## Blogs
+
+- [@ksandom's blog](https://www.randomksandom.com/astro/)
+
 ---
 
 The Matrix room, IRC channel, Telegram group, and Planet Computers Discord's #general-chat channel are bridged (thanks to the work of Sami Olmari), so all the messages are shared across the three channels.
