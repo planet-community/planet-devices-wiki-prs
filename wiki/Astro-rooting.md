@@ -56,11 +56,11 @@ This method is the easiest, but relies on someone having already published the a
 
 - Download the rooted boot image matching your OS version (see Settings -> About phone -> Build number). These rooted boot images were generated using the method: 'Patch the boot image yourself using the Magisk app on Android'
     + V01 (`Astro-11.0-Planet-05182022-V01`)
-        * [stock](https://mega.nz/file/QgNEAKDC#obAvEFHSEloNim_xuLPFRgFxFTaYLYYR7HVXjKC9WVw) (md5: `936703a76c8ddd860f2b84b69ae7c951`)
-        * [rooted](https://mega.nz/file/A1kmzAIS#vf1k1CE15O6IVxcreNapqcSWpO-sgNhoIaPVPlhNM9A) (md5: `59ea27307b69ad03fb0e882f60d4c7a0`)
+        * [stock](https://github.com/shymega/planet-devices/raw/9aa7a0f4324eee11fe8196d5727c13fc48b68b6e/resources/boot-images/astro/boot-v01-stock.img) (md5: `936703a76c8ddd860f2b84b69ae7c951`)
+        * [rooted](https://github.com/shymega/planet-devices/raw/9aa7a0f4324eee11fe8196d5727c13fc48b68b6e/resources/boot-images/astro/boot-v01-magisk-from-app.img) (md5: `59ea27307b69ad03fb0e882f60d4c7a0`)
     + V07 (`Astro-11.0-Planet-05192023-V07`)
-        * [stock](https://mega.nz/file/gpV3QaSJ#7I6t6ttwNR3QrrN38DKp_HCO4A8z58IFkXITyrdXxdg) (md5: `bfa1c0914e8143a2d3cbf9e26a7ad0f6`)
-        * [rooted](https://mega.nz/file/hgVAnJbT#gbmsg4zY2DfTsVa3WdfhEvpDf6antASBcfFPCmna20A) (md5: `2addcb10e94985aea3b9a9527016931f`)
+        * [stock](https://github.com/shymega/planet-devices/raw/9aa7a0f4324eee11fe8196d5727c13fc48b68b6e/resources/boot-images/astro/boot-v07-stock.img) (md5: `bfa1c0914e8143a2d3cbf9e26a7ad0f6`)
+        * [rooted](https://github.com/shymega/planet-devices/raw/9aa7a0f4324eee11fe8196d5727c13fc48b68b6e/resources/boot-images/astro/boot-v07-magisk-from-app-26100.img) (md5: `2addcb10e94985aea3b9a9527016931f`)
 - Reboot to fastboot - run: `adb reboot fastboot`
 - Flash the image to the Astro - run e.g.: `fastboot flash boot boot-v07-magisk-from-app-26100.img`
 - Reboot: `fastboot reboot`
