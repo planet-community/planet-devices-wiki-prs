@@ -1,8 +1,8 @@
-# Astro boot modes
+# Astro: boot modes
 
-The button combos to access the various boot modes of the Astro Slide are listed here.
+The button combinations to access the various boot modes of the Astro Slide are listed here.
 
-For Gemini/Cosmo boot mode button combos, see the [Bootloader page on the Gemian wiki](https://github.com/gemian/gemian/wiki/Bootloader).
+For Gemini/Cosmo boot mode button combinations, see the [Bootloader page on the Gemian wiki](https://github.com/gemian/gemian/wiki/Bootloader).
 
 ## Normal boot
 
