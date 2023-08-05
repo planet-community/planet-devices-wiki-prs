@@ -1,4 +1,4 @@
-# Astro troubleshooting
+# Astro: Troubleshooting
 
 ## Booting stuck after enabling Zygisk in Magisk
 

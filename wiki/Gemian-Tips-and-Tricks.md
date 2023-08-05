@@ -1,4 +1,8 @@
-# Gemian stretch repository updates
+# Gemian: Tips & Tricks
+
+## Fixes
+
+### Gemian: 'Stretch' repository fix
 
 Gemian, the version of Debian for the Gemini PDA and Cosmo Communicator is (at the the time of writing, July 2023) based on Debian stretch (i.e. Debian version 9). Since this is old and now unsupported, the official .deb repositories have been moved off the main Debian server. This means that users of Gemian stretch will no longer be able to install software with apt.
 

@@ -1,4 +1,4 @@
-# Astro rooting
+# Astro: Rooting
 
 To root the Astro Slide, you can use this guide. Overview of the process:
 
