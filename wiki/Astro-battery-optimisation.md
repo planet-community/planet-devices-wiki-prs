@@ -17,23 +17,23 @@ Most apps don't give you any benefit from running in the background, while they 
 
 Go to Settings, and then look for "DuraSpeed" near the bottom of the list:
 
-[[/img/duraspeed.png|alt=A screenshot showing DuraSpeed in settings.]]
+[[img/duraspeed.png|A screenshot showing DuraSpeed in settings.]]
 
 Find the app that you want to be able to run in the background, and **enable** it.
 
-[[/img/duraspeedApps.jpg|alt=A screenshot showing the enabled and disabled apps in DuraSpeed.]]
+[[img/duraspeedApps.jpg|A screenshot showing the enabled and disabled apps in DuraSpeed.]]
 
 ## Battery manager
 
 Go to Settings, and then look for "Battery" near the top of the list:
 
-[[/img/battery.jpg|alt=A screenshot showing where to find the Battery settings.]]
+[[img/battery.jpg|A screenshot showing where to find the Battery settings.]]
 
 Tap "Battery Manager", then "Restricted apps".
 
 You'll get a list. If the app you want to run in the background is in the list; un-tick it:
 
-[[img/removeRestriction.jpg|alt=A screenshot showing the confirmation dialog box for removing the background restriction on a specific app.]]
+[[img/removeRestriction.jpg|A screenshot showing the confirmation dialog box for removing the background restriction on a specific app.]]
 
 Tap "REMOVE" to confirm.
 
@@ -43,14 +43,14 @@ NOTE: This is not simply another view of the "Battery manager".
 
 Go to Settings, and then look for "Apps & notifications" near the top of the list:
 
-[[img/appsAndNotifications.jpg|alt=A screenshot showing where to find the Apps & notifications settings.]]
+[[img/appsAndNotifications.jpg|A screenshot showing where to find the Apps & notifications settings.]]
 
 Tap "Advanced", "Special app access", and then "Battery optimization":
 
-[[img/batteryOptimisation-appList.jpg|alt=A screenshot showing a list of apps to choose battery optimisation or not.]]
+[[img/batteryOptimisation-appList.jpg|A screenshot showing a list of apps to choose battery optimisation or not.]]
 
 Select "All apps" from the dropdown at the top of the screen, and find the app. Tap it:
 
-[[img/dontOptimse.jpg|alt=A screenshot showing the dialog box for choosing whether to optimise a specific app.]]
+[[img/dontOptimse.jpg|A screenshot showing the dialog box for choosing whether to optimise a specific app.]]
 
 And choose "Don't optimize".
