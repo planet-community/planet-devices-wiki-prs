@@ -17,7 +17,7 @@ Most apps don't give you any benefit from running in the background, while they 
 
 Go to Settings, and then look for "DuraSpeed" near the bottom of the list:
 
-[[img/duraspeed.png|A screenshot showing DuraSpeed in settings.]]
+[[img/duraspeed.jpg|A screenshot showing DuraSpeed in settings.]]
 
 Find the app that you want to be able to run in the background, and **enable** it.
 
