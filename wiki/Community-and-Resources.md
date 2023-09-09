@@ -60,6 +60,24 @@ Aside from Indiegogo and the official wiki, none of these are managed or endorse
 
 - [@ksandom's blog](https://www.randomksandom.com/astro/)
 
+## GitHub/GitLab resources
+
+### Organisations and Groups
+
+- [Cosmo-CoDiOS](https://github.com/Cosmo-CoDiOS) - An open-source firmware implementation of the Cosmo Communicator's CoDi firmware.
+- [Gemian](https://github.com/gemian) - The GitHub organisation for Gemian, a Debian-based ROM for Planet devices/
+- [PC-Custom-Android-Ports](https://github.com/PC-Custom-Android-Ports) - Early stage custom Android/LineageOS ROM for Planet devices.
+- [PC-Droidian-Ports](https://github.com/PC-Droidian-Ports) - Early stage Droidian ROM for Planet devices.
+- [PC-NixOS-Ports](https://github.com/PC-NixOS-Ports) - Early stage Mobile NixOS ROM for Planet devices.
+- [PC-PostmarketOS-Ports](https://github.com/PC-PostmarketOS-Ports) - Early stage postmarketOS ROM for Planet devices.
+- [PC-SailfishOS-Ports](https://github.com/PC-SailfishOS-Ports) - Early stage SailfishOS ROM for Planet devices.
+
+### Repos
+
+- [UBPorts - Astro Slide by @NotKit](https://gitlab.com/ubports/porting/community-ports/android11/planet-astroslide/planet-astroslide) - UBPorts ROM for the Astro Slide - do NOT boot, not ready for usage.
+- [UBPorts - Cosmo Communicator by @NotKit](https://gitlab.com/ubports/porting/community-ports/android9/planet-cosmocom/planet-cosmocom) - bootable UBPorts ROM for the Cosmo Communicator.
+- [UBPorts - Gemini PDA by @NotKit](https://gitlab.com/ubports/porting/community-ports/android9/planet-geminipda/planet-geminipda) - UBPorts ROM for the Gemini PDA.
+
 ---
 
 The Matrix room, IRC channel, Telegram group, and Planet Computers Discord's #general-chat channel are bridged (thanks to the work of Sami Olmari), so all the messages are shared across the three channels.
