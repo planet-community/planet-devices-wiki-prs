@@ -62,6 +62,7 @@ Aside from Indiegogo and the official wiki, none of these are managed or endorse
 ## Blogs
 
 - [@ksandom's blog](https://www.randomksandom.com/astro/)
+- [@shymega's blog (NOT representative of Planet's views)](https://blog.shymega.org.uk/)
 
 ## GitHub/GitLab resources
 
