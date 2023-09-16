@@ -45,7 +45,6 @@ Aside from Indiegogo and the official wiki, none of these are managed or endorse
 
 - [#planet-devices on IRCNet](irc://ircnet.net/#planet-devices) - web interfaces: [IRCNet's The Lounge](https://ircnet.chat), [IRCCloud](https://www.irccloud.com/irc/ircnet/channel/planet-devices)
 
-
 ## Matrix
 
 - [planet-devices Matrix room](https://matrix.to/#/#planet-devices:hacklab.fi)
