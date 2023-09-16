@@ -31,9 +31,13 @@ Aside from Indiegogo and the official wiki, none of these are managed or endorse
 [Web interface](https://web.telegram.org)
 
 - [Astro & Cosmo & Gemini PDA](https://t.me/+Uarhx92xsF-E5VoJ)
-- [LineageOS for the Planet Computers mobile devices range](https://t.me/+iVT6lHeemR1hNzVk)
-- [postmarketOS for the Planet Computers mobile devices range](https://t.me/+UBbp0KcUVCA2OTk0)
+- [Community Droidian Porting Initiative for Planet Computers devices range](https://t.me/+T0kkXcz-ZOMxYzY0)
+- [Community NixOS Porting Initiative for Planet Computers devices range](https://t.me/+DKOAudJVbfo4ZGQ0)
+- [Community SailfishOS Porting Initiative for Planet Computers devices range](https://t.me/+u5YQf6N2LwYxNTFk)
+- [Community custom Android/LineageOS Porting Initative for Planet Computers devices range](https://t.me/+iVT6lHeemR1hNzVk)
+- [Community postmarketOS Porting Initiative for Planet Computers devices range](https://t.me/+UBbp0KcUVCA2OTk0)
 - [Cosmo-CoDiOS for the Cosmo Communicator from Planet Computers](https://t.me/+Ylyv1ufCv8o3OWE0)
+- [Gemian - Debian on the Gemini PDA and Cosmo Communicator](https://t.me/+hVqHVEEpzxYxZDRk)
 
 ## Discord
 
