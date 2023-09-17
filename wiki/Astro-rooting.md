@@ -57,10 +57,14 @@ This method is the easiest, but relies on someone having already published the a
 - Download the rooted boot image matching your OS version (see Settings -> About phone -> Build number). These rooted boot images were generated using the method: 'Patch the boot image yourself using the Magisk app on Android'
     + V01 (`Astro-11.0-Planet-05182022-V01`)
         * [stock](https://github.com/shymega/planet-devices/raw/9aa7a0f4324eee11fe8196d5727c13fc48b68b6e/resources/boot-images/astro/boot-v01-stock.img) (md5: `936703a76c8ddd860f2b84b69ae7c951`)
-        * [rooted](https://github.com/shymega/planet-devices/raw/9aa7a0f4324eee11fe8196d5727c13fc48b68b6e/resources/boot-images/astro/boot-v01-magisk-from-app.img) (md5: `59ea27307b69ad03fb0e882f60d4c7a0`)
+        * [rooted](https://github.com/shymega/planet-devices/raw/9aa7a0f4324eee11fe8196d5727c13fc48b68b6e/resources/boot-images/astro/boot-v01-magisk-from-app-26300.img) (md5: `b897242ab79dd2accc7d38245c8d3eb7`)
     + V07 (`Astro-11.0-Planet-05192023-V07`)
         * [stock](https://github.com/shymega/planet-devices/raw/9aa7a0f4324eee11fe8196d5727c13fc48b68b6e/resources/boot-images/astro/boot-v07-stock.img) (md5: `bfa1c0914e8143a2d3cbf9e26a7ad0f6`)
-        * [rooted](https://github.com/shymega/planet-devices/raw/9aa7a0f4324eee11fe8196d5727c13fc48b68b6e/resources/boot-images/astro/boot-v07-magisk-from-app-26100.img) (md5: `2addcb10e94985aea3b9a9527016931f`)
+        * [rooted](https://github.com/shymega/planet-devices/raw/9aa7a0f4324eee11fe8196d5727c13fc48b68b6e/resources/boot-images/astro/boot-v07-magisk-from-app-26300.img) (md5: `bdb8066ad8d3b823dc494b420571fcad`)
+    + V07b (`Astro-11.0-Planet-05242023-V07b`)
+        * [stock](https://github.com/shymega/planet-devices/raw/9aa7a0f4324eee11fe8196d5727c13fc48b68b6e/resources/boot-images/astro/boot-v07b-stock.img) (md5: `bfa1c0914e8143a2d3cbf9e26a7ad0f6`)
+        * [rooted](https://github.com/shymega/planet-devices/raw/9aa7a0f4324eee11fe8196d5727c13fc48b68b6e/resources/boot-images/astro/boot-v07b-magisk-from-app-26300.img) (md5: `bdb8066ad8d3b823dc494b420571fcad`)
+-
 - Reboot to fastboot - run: `adb reboot fastboot`
 - Flash the image to the Astro - run e.g.: `fastboot flash boot boot-v07-magisk-from-app-26100.img`
 - Reboot: `fastboot reboot`
