@@ -64,7 +64,6 @@ This method is the easiest, but relies on someone having already published the a
     + V07b (`Astro-11.0-Planet-05242023-V07b`)
         * [stock](https://github.com/shymega/planet-devices/raw/f223dd6f049045ba3042490d34c481454de9af71/resources/boot-images/astro/boot-v07b-stock.img) (md5: `bfa1c0914e8143a2d3cbf9e26a7ad0f6`)
         * [rooted](https://github.com/shymega/planet-devices/raw/f223dd6f049045ba3042490d34c481454de9af71/resources/boot-images/astro/boot-v07b-magisk-from-app-26300.img) (md5: `bdb8066ad8d3b823dc494b420571fcad`)
--
 - Reboot to fastboot - run: `adb reboot fastboot`
 - Flash the image to the Astro - run e.g.: `fastboot flash boot boot-v07-magisk-from-app-26100.img`
 - Reboot: `fastboot reboot`
