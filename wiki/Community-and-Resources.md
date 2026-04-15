@@ -70,11 +70,13 @@ Aside from Indiegogo and the official wiki, none of these are managed or endorse
 
 - [Cosmo-CoDiOS](https://github.com/Cosmo-CoDiOS) - An open-source firmware implementation of the Cosmo Communicator's CoDi firmware.
 - [Gemian](https://github.com/gemian) - The GitHub organisation for Gemian, a Debian-based ROM for Planet devices/
-- [PC-Custom-Android-Ports](https://github.com/PC-Custom-Android-Ports) - Early stage custom Android/LineageOS ROM for Planet devices.
-- [PC-Droidian-Ports](https://github.com/PC-Droidian-Ports) - Early stage Droidian ROM for Planet devices.
-- [PC-NixOS-Ports](https://github.com/PC-NixOS-Ports) - Early stage Mobile NixOS ROM for Planet devices.
-- [PC-PostmarketOS-Ports](https://github.com/PC-PostmarketOS-Ports) - Early stage postmarketOS ROM for Planet devices.
-- [PC-SailfishOS-Ports](https://github.com/PC-SailfishOS-Ports) - Early stage SailfishOS ROM for Planet devices.
+- [Planet Community](https://github.com/planet-community):
+  Encompassing repos for:
+     - PC-Custom-Android-Ports
+     - PC-Droidian-Ports
+     - PC-NixOS-Ports
+     - PC-PostmarketOS-Ports
+     - PC-SailfishOS-Ports
 
 ### Repos
 
